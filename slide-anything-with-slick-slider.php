@@ -34,11 +34,9 @@ function sawss_enqueue_scripts()
     // Enqueue Slick Slider CSS
     wp_enqueue_style('slick-slider-min', SAWSS_PLUGIN_URL . 'assets/css/slick.min.css', array(), SAWSS_PLUGIN_VERSION);
     wp_enqueue_style('slick-slider-theme-css', SAWSS_PLUGIN_URL . 'assets/css/slick-theme.css', array(), SAWSS_PLUGIN_VERSION);
-    wp_enqueue_style('owl-slider-min', SAWSS_PLUGIN_URL . 'assets/css/owl.carousel.min.css', array(), SAWSS_PLUGIN_VERSION);
 
     // Enqueue Slick Slider JS
     wp_enqueue_script('slick-slider-js', SAWSS_PLUGIN_URL . 'assets/js/slick.min.js', array('jquery'), SAWSS_PLUGIN_VERSION, true);
-    wp_enqueue_script('owl-slider-js', SAWSS_PLUGIN_URL . 'assets/js/owl.carousel.min.js', array('jquery'), SAWSS_PLUGIN_VERSION, true);
 
     // Enqueue custom main script
     wp_enqueue_script('slick-slider-main', SAWSS_PLUGIN_URL . 'assets/js/sawss-slider-main.js', array('jquery'), SAWSS_PLUGIN_VERSION);
